@@ -1,0 +1,115 @@
+body {
+  font-family:helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+
+h1 {
+  font-family:sans-serif;
+  color:red;
+}
+
+h2 {
+  display: inline-block;
+  color:#ffffff;
+}
+
+
+a {
+  text-decoration:none;
+  color:#000099;
+}
+
+
+a:hover {
+  /*color:#77b6e2;*/
+  color:#0cc3300;
+}
+
+.products{
+  margin-left: 30px;
+  float: left;
+  height: 350px;
+  width: 300px;
+
+}
+
+
+.products img {
+  height: 350px;
+  width: 300px;  
+}
+.productInformation{
+  margin-top: 30px;
+}
+#header {
+    padding:10px 100px;
+    font-size:18px;
+    overflow:auto;
+    background-color: #8B008B;
+}
+
+.footer {
+   width: 100%;
+   height:125px;
+   color: #ffffff;
+   background-color: red;
+   text-align: center;
+}
+
+.gallery {
+  margin: 75px;
+  border: 1px solid #ccc;
+  float: left;
+  height: 350px;
+  width: 300px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.About{
+  margin-left: 300px;
+}
+.Login{
+  margin: 30px;
+}
+.Sort{
+  margin-top: -55px;
+  margin-left: 965px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: #8B008B;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

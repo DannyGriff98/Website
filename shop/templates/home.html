@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="Sort">
+<form method="POST" action="">
+  {{ form.hidden_tag() }}
+  {{ form.selection }}
+  {{ form.submit() }}
+</form>
+</div>
+  {% for game in games %}
+  <div class="gallery">
+  <a href="{{ url_for('game', game_id=game.id) }}">
+    <img src="{{ url_for('static', filename='img/' + game.image_file) }}" width="600" height="400">
+  </a>
+  <div class="desc">
+  	<a href="{{ url_for('game', game_id=game.id) }}"> {{ game.title }} £{{ game.price }}</a>
+  	</div>
+  </div>
+  {% endfor %}
+{% endblock content %}

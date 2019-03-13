@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+{% block content %}
+ 
+<h1>Payment Details:</h1>
+<table>
+<form action="">
+
+  <tr><td>First name:</td>
+  <td><div class="tooltip"><input type="text" maxlength="30" required name="firstname" pattern="[A-Z]*" placeholder="John">
+  	<span class="tooltiptext">Please enter as follows: "Example"</span>
+  </div>
+  </td></tr>
+
+  <tr><td>Last name:</td>
+  <td><div class="tooltip"><input type="text" name="lastname" maxlength="30" placeholder="Doe">
+    <span class="tooltiptext">Please enter as follows: "Example"</span>
+  </div>
+</td></tr>
+
+  <tr><td>Email Address:</td>
+  <td><div class="tooltip"><input type="Email" maxlength="30" required name="Email" placeholder="example@example.com">
+  	<span class="tooltiptext">Please enter as follows: "example@example.com"</span>
+  </div>
+</td></tr>
+
+  <tr><td><p> Delivery Address </p></td></tr>
+
+  <tr><td>Country/Region:</td>
+  <td><div class="tooltip"><input type="text" maxlength="30" required name="Country" placeholder="Wales">
+  	<span class="tooltiptext">Please enter as follows: "Wales"</span>
+  </div>
+</td></tr>
+
+  <tr><td>Postcode:</td>
+  <td><div class="tooltip"><input type="text" minlength="8" maxlength="8" pattern="[A-Z]{2}[0-9]{2}[ ]{1}[0-9]{1}[A-Z]{2}" required name="Postcode" placeholder="SA62 4DS">
+  	<span class="tooltiptext">Please enter as follows: "CF24 4DS"</span>
+  </div>
+</td></tr>
+
+  <tr><td>Address Line 1:</td>
+  <td><div class="tooltip"><input type="text" maxlength="30" required name="Line1" placeholder="72 Example Lane">
+  	<span class="tooltiptext">Please enter address as written on letters</span>
+  </div>
+</td></tr>
+
+  <tr><td>Address Line 2:</td>
+  <td><div class="tooltip"><input type="text" maxlength="30" required name="Line2" placeholder="Crundilly">
+  	<span class="tooltiptext">If you do not have one leave blank</span>
+  </div>
+</td></tr>
+
+  <tr><td>Town/City:</td>
+  <td><div class="tooltip"><input type="text" maxlength="30" required name="City" placeholder="Haverfordwest">
+  	<span class="tooltiptext">Please enter as follows: "Cardiff"</span>
+  </div>
+</td></tr>
+
+  <tr><td>County:</td>
+  <td><div class="tooltip"><input type="text" maxlength="30" required name="County" placeholder="Pembrokeshire">
+  	<span class="tooltiptext">Please leave blank if unknown</span>
+  </div>
+</td></tr>
+
+  <tr><td><p> Card Details </p></td></tr>
+
+  <tr><td>Name on Card:</td>
+  <td><div class="tooltip"><input type="text" maxlength="30" required name="Cname" placeholder="JOHN M DOE">
+  	<span class="tooltiptext">Please enter as shown on card</span>
+  </div>
+</td></tr>
+
+  <tr><td>Card Number:</td>
+  <td><div class="tooltip"><input type="text" minlength="16" maxlength="16" required pattern="[0-9]*" name="Cnum" placeholder="0594 5848 9483 5349">
+  	<span class="tooltiptext">Please enter without spaces or symbols</span>
+  </div>
+</td></tr>
+
+  <tr><td>Expiry Date:</td>
+  <td><div class="tooltip"><input type="text" maxlength="5" minlength="5" pattern="[0-9]{2}[/]{1}[0-9]{2}" name="Expiry" placeholder="12/20">
+  	<span class="tooltiptext">Please enter as follows: "12/12"</span>
+  </div>
+</td></tr>
+
+  <tr><td>Security Number:</td>
+  <td><div class="tooltip"><input type="text" minlength="3" maxlength="3" pattern="[0-9]*" name="Secnum" placeholder="364">
+  	<span class="tooltiptext">Please enter the last 3 numbers of your security code</span>
+  </div>
+</td></tr>
+  
+  <tr><td><input type="submit" value="Submit"></td></tr>
+</form> 
+
+{% endblock content %}

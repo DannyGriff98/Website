@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="products">
+  <img src = "{{ url_for('static', filename='img/' + game.image_file) }}">
+</div>
+<div class="productInformation">
+  <p>{{ game.title }} </p>
+
+  <p>Company: {{ game.company}}</p>
+
+  <p>Price: £{{ game.price }}</p>
+
+  <p>Description: {{game.description}}</p>
+
+  <a class="" href="/add_to_cart/{{game.id}}">Add to Cart</a><br>
+
+  <a class="" href="/add_to_wish/{{game.id}}">Add to WishList</a>
+
+  <p> Tell us what you think about this product: </p>
+
+<form method="POST" action="">
+  {{ form.hidden_tag() }}
+  {{ form.review }}
+  {{ form.submit() }}
+</form>
+
+<p> Latest review: </p>
+<p> "{{ game.review }}" </p>
+</div>
+
+{% endblock content %}
